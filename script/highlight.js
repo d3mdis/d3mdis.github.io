@@ -1,3 +1,5 @@
+// Highlight logic
+
 const sections = document.querySelectorAll('#about, #education, #skills');
 const navBarLi = document.querySelectorAll('nav ul li');
 const snap = document.querySelector('.snap');
