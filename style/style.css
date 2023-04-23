@@ -1,0 +1,445 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu";
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    position: sticky;
+    top: 0px;
+    padding: 2vh 0;
+}
+
+nav ul li a {
+    color: white;
+}
+
+nav ul{
+    display: flex;
+    gap: 15vh;
+}
+
+header h1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    font-size: 200px;
+    padding: 20px;
+
+}
+
+header h1 a{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+header h1 span{
+    color: white;
+}
+
+#top a{
+    text-decoration: none;
+}
+
+
+header h1 span:last-child{
+    color: black;
+}
+
+header h1 .lower {
+    font-size: 20px;
+    color: white;
+}
+
+header h1 .fst-h {
+    color: black;
+}
+
+#top {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.design {
+    border-bottom: solid 1px black;
+    height: 100vh;
+    scroll-snap-align: start;
+    border-top: solid 1px black;
+}
+
+header {
+    background-color: #e76f51;
+    height: 94vh;
+    scroll-snap-align: start;
+}
+
+#about {
+    background-color: #f4a261;
+    padding: 10vh;
+    padding-top: 15vh;
+}
+
+#education {
+    background-color: #e9c46a;
+    padding: 10vh;
+}
+
+#skills {
+    background-color: #95d5b2;
+    padding: 10vh;
+    height: 100vh;
+}
+
+.snap {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+#arrow {
+    position: absolute;
+    left: 96%;
+    top: 94%;
+    font-size: 5vh;
+
+}
+#arrow a{
+    text-decoration: none;
+    color: black;
+}
+
+nav * {
+    font-family: "Ubuntu";
+    font-weight: 400;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    gap: 2vh;
+
+}
+
+.logo *{
+    height: 6vh;
+}
+
+#about img {
+    height: 65vh;
+    border-radius: 90px;
+}
+
+#about h2 {
+    font-size: 100px;
+}
+
+#about ul{
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+}
+
+#about ul li:first-child{
+    list-style: none;
+    padding-left: 20px;
+}
+
+#about {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#about .left-side{
+    width: 80vh;
+}
+
+#about .left-side{
+    display: flex;
+    flex-direction: column;
+}
+
+#about .left-side p:last-of-type{
+    margin-top: 90px;
+    font-size: 28px;
+}
+
+#about .link-icons {
+    margin-top: 40px;
+}
+
+#about .link-icons img{
+    height: 5vh;
+    border-radius: 10px;
+    border: solid 2px black;
+    padding: 1vh;
+    margin: 2vh;
+    transition: 0.1s;
+}
+
+#about .link-icons img:hover {
+    transform: scale(1.5);
+    transition: transform .3s;
+}
+
+#about .right-side {
+    box-shadow: 10px 10px 5px black;
+    padding-left: 10px;
+}
+
+#education {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#education h2 {
+    font-size: 60px;
+}
+
+#education .left-side-e p {
+    font-size: 30px;
+    padding: 10px;
+}
+
+#education .right-side-e p {
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+#education .section {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 2px white;
+    padding: 20px;
+}
+
+#skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap:50px;
+}
+
+#skills .section {
+    display: flex;
+    flex-direction: column;
+}
+
+#skills .section .logo {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+#skills .section ul {
+    padding: 30px;
+    font-size: 22px;
+    font-weight: 200;
+    font-style: italic;
+}
+
+#skills .section ul li:not(:last-child){
+    margin-bottom: 10px;;
+}
+
+#skills .fst-s {
+    display: flex;
+    justify-content: space-around;
+    gap: 200px;
+}
+
+#skills .snd-s {
+    display: flex;
+    justify-content: center;
+    
+}
+
+#skills .fst-s .section h2 {
+    font-size: 50px;
+}
+
+#skills .snd-s .section h2 {
+    font-size: 40px;
+}
+
+#skills .snd-s .section .logo img:hover {
+    transform: scale(1.5);
+    transition: transform .3s;
+}
+
+#skills .snd-s .section .logo img {
+    padding: 0px 10px;
+    transition: 0.1s;
+}
+
+nav ul li.active{
+    background-color: #3a3838;
+    transition: 0.3 ease background-color;
+}
+
+#about .right-side:hover{
+    transform: scale(1.02);
+    transition: transform .3s;
+}
+
+#top h1:last-of-type:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+
+#top h1:last-of-type{
+    transition: 0.3s;
+}
+
+#about .right-side{
+    transition: 0.3s;
+}
+
+@media (max-width: 1400px){
+    #arrow {
+        left: 95%;
+    }
+    #about img{
+        height: 40vh;
+    }
+}
+
+@media (max-width: 1070px){
+    #arrow {
+        left: 94%;
+    }
+}
+
+@media (max-width: 930px){
+    #arrow {
+        display: none;
+    }
+    header h1 {
+        font-size: 15vh;
+    }
+
+    #skills{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    #skills .fst-s{
+        flex-wrap: wrap;
+        justify-content: unset;
+        gap: 10px;
+        
+    }
+    
+}
+
+@media(max-width: 450px){
+    #education .section{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    #skills .snd-s .section .logo img{
+        height: 4vh;
+    }
+
+    .logo {
+        gap: 2px;
+    }
+
+    #skills .section .logo{
+        padding: 0px;
+    }
+
+    #skills .snd-s .section h2:last-of-type{
+        font-size: 2.4vh;
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px){
+    header h1 {
+        font-size: 8vh;
+    }
+    #top {
+        margin-top: 20vh;
+    }
+    nav ul {
+        padding: 0;
+        margin: 0;
+        gap: 20px;
+    }
+    #about {
+        flex-wrap: wrap;
+    }
+
+    #about .left-side h2{
+        font-size: 3.5vh;
+    }
+
+    #about .left-side ul{
+        font-size: 1.8vh;
+    }
+
+    #about .left-side p:last-of-type{
+        font-size: 2vh;
+    }
+    
+    #about .link-icons img{
+        margin: 1vh;
+    }
+    #about img{
+        height: 30vh;
+    }
+
+    #education .left-side-e h2{
+        font-size: 3vh;
+    }
+
+    #education .left-side-e p{
+        font-size: 2vh;
+    }
+
+    #skills .fst-s{
+        flex-wrap: wrap;
+        justify-content: unset;
+        gap: 0px;
+    }
+
+    #skills .fst-s .section h2{
+        font-size: 3vh;
+    }
+    #skills .fst-s .section ul{
+        font-size: 2vh;
+    }
+
+    #skills .snd-s .section h2{
+        font-size: 3vh;
+    }
+
+    #skills .snd-s .section .logo{
+        flex-wrap: wrap;
+    }
+
+    #skills{
+        flex-direction: row;
+    }
+}
